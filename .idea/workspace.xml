@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8133d735-e4c1-4c53-8038-614263a8b295" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sandbox.iml" afterPath="$PROJECT_DIR$/.idea/sandbox.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/welcome_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/welcome_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories/user.rb" afterPath="$PROJECT_DIR$/spec/factories/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" />
     </list>
     <ignored path="sandbox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +27,7 @@
     <SUITE FILE_PATH="coverage/sandbox@Api__Devise__RegistrationsController__sandbox.coverage" NAME="Api::Devise::RegistrationsController: sandbox Coverage Results" MODIFIED="1467294486780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sandbox" />
     <SUITE FILE_PATH="coverage/sandbox@Api__V1__UsersController__sandbox.coverage" NAME="Api::V1::UsersController: sandbox Coverage Results" MODIFIED="1467299161705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sandbox" />
     <SUITE FILE_PATH="coverage/sandbox@User_user_registration_email_can_not_be_blank_should_not_be_valid__sandbox.coverage" NAME="User user registration email can not be blank should not be valid: sandbox Coverage Results" MODIFIED="1467281327307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sandbox" />
-    <SUITE FILE_PATH="coverage/sandbox@Api__V1__UsersController_GET_index__sandbox.coverage" NAME="Api::V1::UsersController GET index: sandbox Coverage Results" MODIFIED="1467300119043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sandbox" />
+    <SUITE FILE_PATH="coverage/sandbox@Api__V1__UsersController_GET_index__sandbox.coverage" NAME="Api::V1::UsersController GET index: sandbox Coverage Results" MODIFIED="1467300624985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sandbox" />
     <SUITE FILE_PATH="coverage/sandbox@Run_spec__welcome_controller_spec___sandbox.coverage" NAME="Run spec 'welcome_controller_spec': sandbox Coverage Results" MODIFIED="1467292505809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sandbox" />
     <SUITE FILE_PATH="coverage/sandbox@spec_helper.coverage" NAME="spec_helper Coverage Results" MODIFIED="1467294848867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spec" MODULE_NAME="sandbox" />
     <SUITE FILE_PATH="coverage/sandbox@User_user_registration_password_is_too_short__sandbox.coverage" NAME="User user registration password is too short: sandbox Coverage Results" MODIFIED="1467281237017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="sandbox" />
@@ -84,8 +77,8 @@
       <file leaf-file-name="users_controller_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="352">
+              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -891,7 +884,7 @@
       <workItem from="1467275253027" duration="5351000" />
       <workItem from="1467283042215" duration="13139000" />
       <workItem from="1467298686477" duration="14000" />
-      <workItem from="1467298722236" duration="1401000" />
+      <workItem from="1467298722236" duration="1908000" />
     </task>
     <servers />
   </component>
@@ -899,8 +892,8 @@
     <history-entry file="Api__V1__UsersController_GET_index__sandbox - 2016.06.30 at 18h 22m 02s.xml">
       <configuration name="Api::V1::UsersController GET index: sandbox" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_GET_index_returns_all_users__sandbox - 2016.06.30 at 18h 12m 37s.xml">
-      <configuration name="Api::V1::UsersController GET index returns all users: sandbox" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController_GET_index__sandbox - 2016.06.30 at 18h 30m 27s.xml">
+      <configuration name="Api::V1::UsersController GET index: sandbox" configurationId="RSpecRunConfigurationType" />
     </history-entry>
     <history-entry file="Api__V1__UsersController_GET_index_returns_all_users__sandbox - 2016.06.30 at 18h 14m 05s.xml">
       <configuration name="Api::V1::UsersController GET index returns all users: sandbox" configurationId="RSpecRunConfigurationType" />
@@ -928,7 +921,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21434000" />
+    <option name="totallyTimeSpent" value="21941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="951" extended-state="6" />
@@ -1319,8 +1312,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        <state relative-caret-position="352">
+          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding />
         </state>
       </provider>
