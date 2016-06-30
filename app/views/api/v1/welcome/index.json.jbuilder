@@ -1,0 +1,1 @@
+json.welcome 'index'
