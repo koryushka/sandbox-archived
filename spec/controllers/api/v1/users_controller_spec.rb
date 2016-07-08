@@ -8,17 +8,16 @@ RSpec.describe Api::V1::UsersController, :type => :controller do
       expect(response).to be_success
     end
 
-    # it 'returns all users' do
-    #   5.times do |i|
-    #     create(:user, email: "test_#{i}@email.com")
-    #   end
-    #   get :index, format: :json
-    #   parsed_response = response.body.to_json
-    #   expect(parsed_response[:users].length).to eq(5)
-    # end
+    it 'returns all users' do
+      create_list(:user, 5)
+
+      get :index, format: :json
+      parsed_response = JSON.parse response.body
+      expect(parsed_response['data'].length).to eq(5)
+    end
   end
 
-  
+
   # describe "GET destroy" do
   #   it "returns http success" do
   #     delete :destroy

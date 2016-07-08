@@ -1,5 +1,3 @@
 %h1 Welcome#index
-%p
-  - if current_user
-    = "#{current_user.email}"
+= link_to 'first', api_user_url(User.first)
 %p Find me in app/views/welcome/index.html.haml

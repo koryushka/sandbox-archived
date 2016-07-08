@@ -4,7 +4,7 @@ include Devise::TestHelpers
 
 RSpec.describe Api::Devise::RegistrationsController, :type => :controller do
   before :each do
-    request.env['devise.mapping'] = Devise.mappings[:user]
+    request.env['auth.mapping'] = Devise.mappings[:user]
   end
 
   describe "POST users" do
