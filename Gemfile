@@ -31,6 +31,8 @@ gem 'versionist'
 
 gem 'haml-rails'
 
+gem 'ci_reporter'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
