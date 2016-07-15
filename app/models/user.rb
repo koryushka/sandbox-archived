@@ -4,7 +4,21 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
   has_many :posts, dependent: :destroy
-  around_create :log
+  # around_create :log
+
+  # self.ignored_columns = %w(email)
+  #
+  # def self.create(*params, confirm: true)
+  #   if confirm == true
+  #     super(params)
+  #   elsif confirm == false
+  #     user = new(params)
+  #     user.skip_confirmation!
+  #     user.save
+  #   end
+  #   puts params.class
+  #   puts 'Created'
+  # end
 
   def publish_post
     posts.create!(title: "Publish!", text: "#{Time.now}")
@@ -22,7 +36,7 @@ class User < ApplicationRecord
   def log
     puts "Preparing for creation..."
     yield
-    puts "User successfully created!"
+    puts "User #{self.id} successfully created!"
   end
 
 end

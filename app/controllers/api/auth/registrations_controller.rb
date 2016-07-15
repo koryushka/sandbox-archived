@@ -20,6 +20,11 @@ module Api
         end
       end
 
+      # def update
+      #   resource.skip_confirmation!
+      #   super
+      # end
+
       protected
       def user_params
         params.permit(:email, :password)

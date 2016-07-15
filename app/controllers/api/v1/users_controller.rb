@@ -1,8 +1,9 @@
 module Api
   module V1
     class UsersController < BaseController
+      # include Api::V1::UsersHelper
       before_action :fetch_user, except: [:index, :me]
-      before_action do
+      before_action except: [:index, :me] do
         doorkeeper_authorize! :admin, :user
       end
       before_action only: [:update, :destroy] do
@@ -12,6 +13,7 @@ module Api
       def index
         @users = User.all
         render json: @users, each_serializer: SimpleUserSerializer, status: 200
+        # render text: 'Index'
       end
 
       def show
@@ -31,7 +33,7 @@ module Api
       end
 
       def me
-        render json: current_user, status: 200
+        render json: {user: current_user}
       end
 
       private

@@ -1,3 +1,4 @@
-%h1 Welcome#index
-= link_to 'first', api_user_url(User.first)
-%p Find me in app/views/welcome/index.html.haml
+-# - @users.each do |user|
+-#   - cache user do
+-#     = render user
+= render @users #partial: 'users/user', collection: @users#, cached: true

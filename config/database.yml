@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: sandbox_production
-  username: sandbox
-  password: <%= ENV['SANDBOX_DATABASE_PASSWORD'] %>
+  # username: sandbox
+  # password: <%= ENV['SANDBOX_DATABASE_PASSWORD'] %>
