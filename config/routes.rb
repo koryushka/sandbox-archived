@@ -16,6 +16,10 @@ Rails.application.routes.draw do
         put 'update_me', to: 'users#update_self_account'
         get 'me',        to: 'users#me', on: :collection
       end
+
+      resources :products do
+        resources :reviews
+      end
     end
   end
 

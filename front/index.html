@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app = 'front'>
+  <head>
+    <title>Front</title>
+    <link rel='stylesheet' type='text/css' href='bootstrap.min.css' />
+    <link rel='stylesheet' type='text/css' href='stylesheet.css' />
+  </head>
+  <body ng-controller = 'MainController as front'>
+    <ul class = 'list-group'>
+      <li class = 'list-group-item' ng-repeat = 'product in front.products | orderBy: "-price"' ng-hide = 'product.soldOut'>
+        <product-title></product-title>
+        <product-panels ng-controller = 'PanelController as panel'></product-panels>
+      </li>
+    </ul>
+    <script type='text/javascript' src='angular.min.js'></script>
+    <script type='text/javascript' src='app.js'></script>
+    <script type='text/javascript' src='products.js'></script>
+    <script type='text/javascript' src='bower_components/angular-resource/angular-resource.js'></script>
+  </body>
+</html>
